@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation: Saba & Humayun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Naskh+Arabic:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for typography and theme */
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #fdfaf3; /* Soft cream background */
+            overflow-x: hidden; /* Prevent horizontal scroll on animations */
+            /* Subtle Islamic pattern background */
+            background-image: url('https://www.transparenttextures.com/patterns/arabesque.png'); /* A subtle arabesque pattern */
+            background-repeat: repeat;
+            background-size: 150px; /* Adjust size for subtlety */
+        }
+        .urdu-text {
+            font-family: 'Noto Naskh Arabic', serif;
+            direction: rtl;
+        }
+        .cursive-text {
+            font-family: 'Great Vibes', cursive;
+        }
+        .card-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            border: 1px solid #e0cda8;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 8px double #d4af37; /* Gold double border */
+            animation: borderGlow 3s infinite alternate; /* Subtle border glow */
+            position: relative; /* For absolute positioning of decorative elements */
+            z-index: 1; /* Ensure content is above background pattern */
+        }
+        .gold-text {
+            color: #b8860b; /* Darker gold */
+        }
+        .maroon-text {
+            color: #800000; /* Deep maroon */
+        }
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 2rem 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes borderGlow {
+            from { border-color: #d4af37; box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+            to { border-color: #e0cda8; box-shadow: 0 0 25px rgba(212, 175, 55, 0.6); }
+        }
+
+        /* Apply animations with delays */
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0; /* Start invisible */
+        }
+        .animate-delay-1 { animation-delay: 0.5s; }
+        .animate-delay-2 { animation-delay: 1s; }
+        .animate-delay-3 { animation-delay: 1.5s; }
+        .animate-delay-4 { animation-delay: 2s; }
+        .animate-delay-5 { animation-delay: 2.5s; }
+        .animate-delay-6 { animation-delay: 3s; }
+        .animate-delay-7 { animation-delay: 3.5s; }
+        .animate-delay-8 { animation-delay: 4s; }
+        .animate-delay-9 { animation-delay: 4.5s; }
+        .animate-delay-10 { animation-delay: 5s; }
+
+        /* Responsive adjustments for program details */
+        @media (max-width: 768px) {
+            .program-grid {
+                grid-template-columns: 1fr; /* Stack columns on small screens */
+            }
+            .program-urdu {
+                border-right: none; /* Remove right border */
+                border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Add bottom border */
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+            .program-english {
+                padding-left: 0;
+            }
+        }
+
+        /* Decorative SVG styles */
+        .decorative-svg {
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+            fill: #d4af37; /* Gold color for the SVG */
+            margin: 0 auto;
+            display: block;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Background Audio - Add your audio file here. Autoplay and loop for continuous play. -->
+    <!-- Note: Autoplay might be blocked by browsers, user interaction might be needed to start it. -->
+    <audio autoplay loop>
+        <!-- Replace 'your-wedding-music.mp3' with the actual path to your audio file -->
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="card-container p-6 sm:p-10 text-center text-gray-700">
+
+        <!-- Bismillah -->
+        <div class="mb-6 animate-fade-in">
+            <p class="urdu-text text-2xl sm:text-3xl gold-text mb-2">بسم اللہ الرحمن الرحیم</p>
+            <p class="text-sm sm:text-base italic">In the name of "Allah" the most Beneficent & Merciful</p>
+        </div>
+
+        <!-- Poetic Invite -->
+        <div class="mb-8 text-lg sm:text-xl italic maroon-text animate-fade-in animate-delay-1">
+            <p class="urdu-text">شکوہ ہمیں منظور نہیں نہ کوئی بہانہ ہوگا</p>
+            <p class="urdu-text">ہماری خوشیوں کی خاطر آپ کو آنا ہوگا</p>
+        </div>
+
+        <!-- Decorative Divider SVG -->
+        <svg class="decorative-svg my-6 animate-fade-in animate-delay-2" viewBox="0 0 100 20">
+            <path d="M0,10 C20,0 30,20 50,10 C70,0 80,20 100,10" stroke="#d4af37" stroke-width="1" fill="none"/>
+            <circle cx="25" cy="10" r="2" fill="#d4af37"/>
+            <circle cx="75" cy="10" r="2" fill="#d4af37"/>
+        </svg>
+
+        <!-- Main Invitation Text -->
+        <p class="mb-4 animate-fade-in animate-delay-3">Mr. & Mrs. Md. Mahfooz Alam</p>
+        <p class="mb-8 text-base sm:text-lg animate-fade-in animate-delay-4">request the pleasure of your gracious presence on the auspicious occasion of the Marriage Ceremony of their beloved daughter</p>
+
+        <!-- Bride and Groom Names -->
+        <div class="my-8">
+            <h1 class="cursive-text text-5xl sm:text-6xl gold-text animate-fade-in animate-delay-5">Saba Ghausia</h1>
+            <p class="text-lg sm:text-xl animate-fade-in animate-delay-6">D/o Md. Mahfooz Alam</p>
+            
+            <p class="cursive-text text-4xl sm:text-5xl my-4 maroon-text animate-fade-in animate-delay-7">&</p>
+
+            <h1 class="cursive-text text-5xl sm:text-6xl gold-text animate-fade-in animate-delay-8">Humayun Afridi</h1>
+            <p class="text-lg sm:text-xl animate-fade-in animate-delay-9">S/o RTD Mohammad Yaqub</p>
+            <p class="text-base sm:text-lg animate-fade-in animate-delay-10">(New Azimabad Colony, Patna-6)</p>
+        </div>
+
+        <div class="divider animate-fade-in animate-delay-10"></div>
+
+        <!-- Programme Details -->
+        <h2 class="cursive-text text-4xl sm:text-5xl gold-text mb-6 animate-fade-in animate-delay-10">Programme</h2>
+        <div class="program-grid grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 max-w-2xl mx-auto text-left text-base sm:text-lg">
+            <!-- Urdu Programme -->
+            <div class="program-urdu urdu-text pr-4 border-r-2 border-yellow-600/30 animate-fade-in animate-delay-10">
+                <p><strong>هلدی و مانجها:</strong> بروز بدھ، ۸ اکتوبر ۲۰۲۵، شام ۴:۰۰ بجے</p>
+                <p><strong>آمد بارات:</strong> بروز سنیچر، ۱۱ اکتوبر ۲۰۲۵، شام ۷:۳۰ بجے</p>
+                <p><strong>نکاح:</strong> بروز سنیچر، ۱۱ اکتوبر ۲۰۲۵، رات ۸:۰۰ بجے</p>
+                <p><strong>طعام:</strong> بروز سنیچر، ۱۱ اکتوبر ۲۰۲۵، رات ۹:۰۰ بجے</p>
+                <p><strong>رخصتی:</strong> بروز اتوار، ۱۲ اکتوبر ۲۰۲۵، صبح ۷:۰۰ بجے</p>
+            </div>
+            <!-- English Programme -->
+            <div class="program-english pl-4 animate-fade-in animate-delay-10">
+                <p><strong>Haldi & Manjha:</strong> Wed, 8th Oct 2025, 4:00 PM</p>
+                <p><strong>Arrival of Barat:</strong> Sat, 11th Oct 2025, 7:30 PM</p>
+                <p><strong>Nikah:</strong> Sat, 11th Oct 2025, 8:00 PM</p>
+                <p><strong>Dinner:</strong> Sat, 11th Oct 2025, 9:00 PM</p>
+                <p><strong>Rukhsati:</strong> Sun, 12th Oct 2025, 7:00 AM</p>
+            </div>
+        </div>
+
+        <!-- Quranic Verse - Corrected to the selected verse -->
+        <div class="mt-10 text-lg sm:text-xl italic maroon-text px-4 animate-fade-in animate-delay-10">
+            <p class="urdu-text">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"</p>
+            <p class="text-sm sm:text-base mt-2">"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought." (Quran 30:21)</p>
+        </div>
+
+        <div class="divider animate-fade-in animate-delay-10"></div>
+
+        <!-- Compliments & RSVP -->
+        <div class="mt-10 pt-6 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm sm:text-base animate-fade-in animate-delay-10">
+            <div class="text-center md:text-left">
+                <h3 class="font-bold text-base sm:text-lg mb-2">R.S.V.P.</h3>
+                <p>All Relatives & Friends</p>
+            </div>
+            <div class="text-center md:text-right">
+                <h3 class="font-bold text-base sm:text-lg mb-2">With best compliments from:</h3>
+                <p class="font-bold">Md. Mahfooz Alam</p>
+                <p>Vill.-Khaira Chaman, P.S.-Chabillapur, Distt-Nalanda</p>
+                <p>Mob: 9771813073, 7070747777</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
